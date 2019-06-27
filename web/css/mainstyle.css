@@ -1,0 +1,757 @@
+/*CSS que é o principal para quase todas as paginas, exceto pagina de aviso e de registro.
+Os codigos são bem genericos e auto explicativos, utilização de alguns hovers
+fazendo referencia na maioria das vezes a classes, e em poucas as vezes em ids
+e marcações nativas.*/
+
+body{
+    margin: 0 auto;
+    width: 1200px;
+    padding: 50px;
+    background-color: #fdeecb;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: #f79c26;
+    border: 2px solid white;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    display: block;
+}
+
+div.logo{
+    width: 200px;
+    height: 50px;
+    float: left;
+    padding: 10px;
+    position: relative;
+}
+
+div.menu{
+    width: 40%;
+    height: 50px;
+    position: absolute;
+    left: 230px;
+    padding: 10px;
+}
+
+.menu a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 42px;
+    padding: 10px 10px 12px 10px;
+    display: inline;
+}
+
+.menu a:hover{
+  background-color: #f22521;
+}
+
+div.gerandlogin{
+    height: 50px;
+    width: 30%;
+    float: right;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    display: block;
+}
+
+.gerandlogin .gerenciar{
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+}
+
+#loginform{
+    width: 100%;
+    height: 100%;
+}
+
+.gerenciar button{
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    background: white;
+    color: #f79c26;
+    border: 2px graytext;
+    border-radius: 16px;
+}
+
+.gerenciar button:hover{
+    background: #f22521;
+    color: white;
+    cursor: pointer;
+}
+
+.gerandlogin .login{
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+}
+
+.gerandlogin .login span{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    float: none;
+    top: 6px;
+    padding: 16px 10px 20px 10px;
+}
+
+.gerandlogin .login span:hover{
+  background-color: #f22521;
+  cursor: pointer;
+}
+
+.logindown{
+    position: relative;
+    width: 200px;
+    height: auto;
+    background-color: #f79c26;
+    top: 28px;
+    right: 29px;
+    border: 2px solid white;
+    border-radius: 9px;
+    display: none;
+    z-index: 4;
+}
+
+#loginform div{
+    padding: 8px 5px 9px 5px;
+    height: auto;
+    width: auto;
+}
+
+#loginform div label{
+    font-size: 21px;
+    color: white;
+}
+
+#loginform div input{
+    height: 25px;
+}
+
+#loginform div input[type=submit]{
+    width: 169px;
+    height: 28px;
+    background-color: #f22521;
+    color: white;
+    border: 2px solid white;
+}
+
+#loginform div input[type=submit]:hover{
+    background-color: #b71c19;
+    cursor: pointer;
+}
+
+#loginform div a{
+    width: 169px;
+    height: 28px;
+    background-color: #f22521;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+#loginform div a:hover{
+    background-color: #b71c19;
+    cursor: pointer;
+}
+
+.fora{
+    width: 169px;
+    height: 28px;
+    background-color: #f22521;
+    padding: 0px 26px 0px 26px;
+    color: white;
+    border: 2px solid white;
+}
+
+footer{
+    background-color: #f79c26;
+    border: 2px solid white;
+    color: white;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    display: block;
+    bottom: 0;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.content{
+    width: 100%;
+    height: auto;
+}
+
+.ultfilmes{
+    width: 70%;
+    height: 350px;
+    background: #f79c26;
+    margin: 15px 0px 15px 0px;
+    border: 2px solid white;
+    display: inline-block;
+    position: relative;
+}
+
+.ultfilmes h1{
+    position: relative;
+    left: 10px;
+    top: 15px;
+    margin: 5px;
+    color: white;
+}
+
+.moveru{
+    float: right;
+    padding-right: 20px;
+}
+
+.moveru a{
+    background: none;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+.dir:hover,.esq:hover{
+    color: #b71c19;
+    cursor: pointer;
+}
+
+.bloco{
+    width: 830px;
+    height: 268px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blocofilme{
+    width: 6560px;
+    left: 0px;
+    display: block;
+    transition: all 2s ease 0s;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.nfilme{
+    width: 160px;
+    height: 230px;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+}
+
+.melhoresfilmes{
+    width: 70%;
+    height: 350px;
+    background: #f79c26;
+    margin: 15px 0px 15px 0px;
+    border: 2px solid white;
+    display: inline-block;
+    position: relative;
+}
+
+.melhoresfilmes h1{
+    position: relative;
+    left: 10px;
+    top: 15px;
+    margin: 5px;
+    color: white;
+}
+
+.moverf{
+    float: right;
+    padding-right: 20px;
+}
+
+.moverf a{
+    background: none;
+    border: none;
+    color: white;
+}
+
+.blocomfilme{
+    width: 6560px;
+    left: 0px;
+    display: block;
+    transition: all 2s ease 0s;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.mfilme{
+    width: 160px;
+    height: 230px;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+}
+
+.melhoresatores{
+    width: 70%;
+    height: 350px;
+    background: #f79c26;
+    margin: 15px 0px 15px 0px;
+    border: 2px solid white;
+    display: inline-block;
+    position: relative;
+}
+
+.melhoresatores h1{
+    position: relative;
+    left: 10px;
+    top: 15px;
+    margin: 5px;
+    color: white;
+}
+
+.movera{
+    float: right;
+    padding-right: 20px;
+}
+
+.movera a{
+    background: none;
+    border: none;
+    color: white;
+}
+
+.blocoator{
+    width: 6560px;
+    left: 0px;
+    display: block;
+    transition: all 2s ease 0s;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.nator{
+    width: 160px;
+    height: 230px;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+}
+
+.ultusuarios{
+    width: 25%;
+    height: 1116px;
+    float: right;
+    background: #f79c26;
+    color: white;
+    margin: 15px 0px 15px 0px;
+    border: 2px solid white;
+    display: block;
+    overflow: auto;
+}
+
+.ultusuarios h2{
+    position: relative;
+    left: 20px;
+}
+
+.ultusuarios .uusuarios{
+    position: relative;
+    left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ultusuarios .uusuarios a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.filme{
+    width: 100%;
+    height: 370px;
+    background: #f79c26;
+    margin: 15px 0px 15px 0px;
+    border: 2px solid white;
+    display: block;
+    position: relative;
+    color: white;
+}
+
+.filme #foto{
+    float:left;
+    margin: 20px;
+}
+
+.detfilme{
+    padding: 15px;
+    float: left;
+    width: 40%;
+    height: 340px;
+    display: inline;
+}
+
+.notaf{
+    padding: 15px;
+    text-align: right;
+    float: right;
+}
+
+.ator{
+    width: 100%;
+    height: 370px;
+    background: #f79c26;
+    margin: 15px 0px 15px 0px;
+    border: 2px solid white;
+    display: block;
+    position: relative;
+    color: white;
+}
+
+.ator #foto{
+    float:left;
+    margin: 20px;
+}
+
+.detator{
+    padding: 15px;
+    float: left;
+    width: 40%;
+    height: 340px;
+    display: inline;
+}
+
+.notaa{
+    padding: 15px;
+    text-align: right;
+    float: right;
+}
+
+.listafilme{
+    width: 100%;
+    height: 710px;
+    background: #f79c26;
+    margin: 15px 0px 15px 0px;
+    border: 2px solid white;
+    display: block;
+    position: relative;
+    overflow: auto;
+}
+
+.ordemfilmes{
+    color:white;
+    margin: 25px;
+}
+
+.ordemfilmes ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.ordemfilmes ul li{
+    width: 190px;
+    height: 250px;
+    margin: 10px;
+    float: left;
+}
+
+.ordemfilmes ul li a{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.listaator{
+    width: 100%;
+    height: 710px;
+    background: #f79c26;
+    margin: 15px 0px 15px 0px;
+    border: 2px solid white;
+    display: block;
+    position: relative;
+    overflow: auto;
+}
+
+.ordematores{
+    color:white;
+    margin: 25px;
+}
+
+.ordematores ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.ordematores ul li{
+    width: 190px;
+    height: 250px;
+    margin: 10px;
+    float: left;
+}
+
+.ordematores ul li a{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.perfil{
+    width: 100%;
+    height: 100%;
+    background: #f79c26;
+    margin: 15px 0px 15px 0px;
+    border: 2px solid white;
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.infperfil{
+    margin: 30px;
+}
+
+.infperfil img{
+    float: right;
+}
+
+.gerenciarusuarios{
+    height: 266px;
+    background: #f79c26;
+    margin: 15px 0px 15px 0px;
+    border: 3px solid white;
+    display: block;
+    position: relative;
+    color: white;
+    padding: 22px;
+}
+
+.gerenciarusuarios h2{
+    float: left;
+    margin: 7px;
+}
+
+.gerenciarusuarios button{
+    float: right;
+    position: relative;
+    width: 200px;
+    margin: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    background: white;
+    color: #f79c26;
+    border: 2px graytext;
+    border-radius: 16px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.gerenciarusuarios button:hover{
+    background: #f22521;
+    color: white;
+    cursor: pointer;
+}
+
+.gerenciarusuarios div{
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    height: 80%;
+    float: left;
+}
+
+.gerenciarusuarios div table{
+    width: 100%;
+    text-align: center;
+}
+
+.gerenciarusuarios tr th{
+    border: 3px solid white;
+    padding: 5px;
+}
+
+.gerenciarusuarios tr td{
+    padding: 5px;
+}
+
+.gerenciarusuarios tr:nth-child(even){
+    background-color: #f9b052;
+}
+
+.gerenciarfilmes{
+    height: 266px;
+    background: #f79c26;
+    margin: 15px 0px 15px 0px;
+    border: 3px solid white;
+    display: block;
+    position: relative;
+    color: white;
+    padding: 22px;
+}
+
+.gerenciarfilmes h2{
+    float: left;
+    margin: 7px;
+}
+
+.gerenciarfilmes button{
+    float: right;
+    position: relative;
+    width: 200px;
+    margin: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    background: white;
+    color: #f79c26;
+    border: 2px graytext;
+    border-radius: 16px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.gerenciarfilmes button:hover{
+    background: #f22521;
+    color: white;
+    cursor: pointer;
+}
+
+.gerenciarfilmes div{
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    height: 80%;
+    float: left;
+}
+
+.gerenciarfilmes div table{
+    width: 100%;
+    text-align: center;
+}
+
+.gerenciarfilmes tr th{
+    border: 3px solid white;
+    padding: 5px;
+}
+
+.gerenciarfilmes tr td{
+    padding: 5px;
+}
+
+.gerenciarfilmes tr:nth-child(even){
+    background-color: #f9b052;
+}
+
+.gerenciaratores{
+    height: 266px;
+    background: #f79c26;
+    margin: 15px 0px 15px 0px;
+    border: 3px solid white;
+    display: block;
+    position: relative;
+    color: white;
+    padding: 22px;
+}
+
+.gerenciaratores h2{
+    float: left;
+    margin: 7px;
+}
+
+.gerenciaratores button{
+    float: right;
+    position: relative;
+    width: 200px;
+    margin: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    background: white;
+    color: #f79c26;
+    border: 2px graytext;
+    border-radius: 16px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.gerenciaratores button:hover{
+    background: #f22521;
+    color: white;
+    cursor: pointer;
+}
+
+.gerenciaratores div{
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    height: 80%;
+    float: left;
+}
+
+.gerenciaratores div table{
+    width: 100%;
+    text-align: center;
+}
+
+.gerenciaratores tr th{
+    border: 3px solid white;
+    padding: 5px;
+}
+
+.gerenciaratores tr td{
+    padding: 5px;
+}
+
+.gerenciaratores tr:nth-child(even){
+    background-color: #f9b052;
+}
+
+.CRU{
+    height: auto;
+    background: #f79c26;
+    margin: 15px 0px 15px 0px;
+    border: 3px solid white;
+    display: block;
+    position: relative;
+    color: white;
+    padding: 28px;
+}
+
+.CRU form button{
+    width: 100%;
+    height: 48px;
+    margin: 20px 0px 5px 0px;
+    font-size: 34px;
+    font-weight: bold;
+    background: white;
+    color: #f79c26;
+    border: 2px graytext;
+    border-radius: 50px;
+}
+
+.CRU form button:hover{
+    background: #f22521;
+    color: white;
+    cursor: pointer;
+}
+
+.CRU form fieldset{
+    border: none;
+    width: 97%;
+}
+
+.CRU form fieldset label{
+    float: left;
+    font-size: 23px;
+}
+
+.CRU form fieldset input{
+    float: right;
+    font-size: 22px;
+    width: 75%;
+}

@@ -1,0 +1,94 @@
+/*Pagina css que é usada nas paginas de aviso e de registro.
+Parecida com a anterior, porém mais simples por se envolver com menos paginas*/
+body {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fdeecb;
+    font-family: sans-serif;
+}
+
+.caixa{
+    width: 25%;
+    height: auto;
+    background-color: #f79c26;
+    color: white;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 90px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.logo{
+    position: relative;
+    margin: 15px;
+    text-align: center;
+}
+
+.registroform{
+    position: relative;
+}
+
+.registroform fieldset{
+    border: none;
+    margin: auto;
+    width: 80%;
+    display: block;
+    margin-bottom: 9px;
+}
+
+fieldset label{
+    display: inline-block;
+    padding-bottom: 7px;
+    font-size: 18px;
+}
+
+input#nome, input#usuario, input#email, input#senha, input#nasc, input#urlfoto{
+    width: 95%;
+    display: block;
+    font-size: 20px;
+    padding: 7px;
+}
+
+.men{
+    position: relative;
+    left: 25px;
+}
+
+.woman{
+    position: relative;
+    left: 55px;
+}
+
+input#adduser{
+    width: 100%;
+    height: 40px;
+    display: block;
+    background: #f22521;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cprt{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.cprt a{
+    color: white;
+    text-decoration: none;
+}
+
+.aviso{
+    text-align: center;
+    padding: 12px;
+}
